@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>NumPy数值计算基础 · Diko&#39;s Blog</title>
+    <title>About Diko-Y · Diko&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,7 +203,7 @@
 </head>
 
     
-        <body class="post-body">
+        <body class="about-body">
     
     
 <header class="header">
@@ -211,15 +211,6 @@
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >Diko&#39;s Blog</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">NumPy数值计算基础</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>Diko's Blog</a>
 </header>
@@ -238,61 +229,23 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/23-1PH5133320.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            NumPy数值计算基础
-            <!-- 404 -->
+            About Diko-Y
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                
-                    <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.5k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/07/18</span>
-                    
-                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
-                        <span class="iconfont-archer">&#xe602;</span>
-                        <span id="busuanzi_value_page_pv"></span>
-                    </span>
-                    
-                    <span class="shareWrapper">
-                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
-                        <span class="shareText">Share</span>
-                        <ul class="shareList">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -393,200 +346,18 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main post-page">
+            <!-- 不可以删除，否则会调用post的layout  -->
+<main class="main about-page">
     <article class="article-entry">
-        <h1 id="NumPy数值计算基础"><a href="#NumPy数值计算基础" class="headerlink" title="NumPy数值计算基础"></a>NumPy数值计算基础</h1><h2 id="NumPy简介"><a href="#NumPy简介" class="headerlink" title="NumPy简介"></a>NumPy简介</h2><ul>
-<li>NumPy(Numerical Python) 是 Python 语言的一个扩展程序库，支持大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。NumPy 的前身 Numeric 最早是由 Jim Hugunin 与其它协作者共同开发，2005 年，Travis Oliphant 在 Numeric 中结合了另一个同性质的程序库 Numarray 的特色，并加入了其它扩展而开发了 NumPy。NumPy 为开放源代码并且由许多协作者共同维护开发。</li>
-</ul>
+        <hr>
+<p>​                                 <strong>99年出生</strong></p>
+<p>​                                                                               <strong>博客名Diko-Y</strong></p>
+<p>​                                                               <strong>计算机在读学生</strong></p>
+<p>​                                                                               <strong>爱好：音乐-篮球</strong></p>
+<p>​                                                                                             <strong>人比较懒惰</strong>   </p>
 <hr>
-<h2 id="掌握NumPy数组对象adarray"><a href="#掌握NumPy数组对象adarray" class="headerlink" title="掌握NumPy数组对象adarray"></a>掌握NumPy数组对象adarray</h2><ul>
-<li>python提供了一个array模块。array和list不同，他直接保存数值，和C语言的一维数组比较类似。但是由于python的array模块不支持多维，也没有各种运算函数，因此不适合做数值运算。Numpy的诞生就弥补了这些不足。Numpy提供了一种储存<strong>单一数据类型</strong>的<strong>多维数组</strong>—ndarray。</li>
-</ul>
-<h3 id="创建数组对象"><a href="#创建数组对象" class="headerlink" title="创建数组对象"></a>创建数组对象</h3><ul>
-<li><h3 id="Numpy提供了两种基本对象"><a href="#Numpy提供了两种基本对象" class="headerlink" title="Numpy提供了两种基本对象"></a>Numpy提供了两种基本对象</h3><ul>
-<li>ndarray是储存单一数据类型的多维数组。</li>
-<li>ufunc是能够对数组进行处理的函数。</li>
-</ul>
-</li>
-<li><h3 id="数组属性"><a href="#数组属性" class="headerlink" title="数组属性"></a>数组属性</h3><ul>
-<li><table>
-<thead>
-<tr>
-<th>属性</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ndim</td>
-<td align="left">返回int。表示数组的维度</td>
-</tr>
-<tr>
-<td>shape</td>
-<td align="left">返回tuple。表示数组的尺寸，对于n行m列的矩阵，形状为（n，m）</td>
-</tr>
-<tr>
-<td>size</td>
-<td align="left">返回int。表示数组的元素总数，等于数组形状的乘积。</td>
-</tr>
-<tr>
-<td>dtype</td>
-<td align="left">返回data-type。描述数组中元素类型。</td>
-</tr>
-<tr>
-<td>Itemsize</td>
-<td align="left">返回int。表示数组的每个元素的大小，例如，一个元素类型为float64的数组的itemsiz属性值为8<br>（float64占用64个bits，每个字节长度为8，所以64/8，占用8个字节）</td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-</li>
-<li><h3 id="数组创建"><a href="#数组创建" class="headerlink" title="数组创建"></a>数组创建</h3><ul>
-<li>array可以创建一维或者多维数组。</li>
-<li>arange可以指定<strong>开始值</strong>丶<strong>终值</strong>和<strong>步长</strong>来创建一维数组，<strong>创建的数组不含终值</strong>。</li>
-<li>linspace可以指定<strong>开始值</strong>丶<strong>终值</strong>和<strong>元素个数</strong>来创建一维数组，<strong>默认设置包含终值，这一点需要和arrange函数区分开</strong>。</li>
-<li>logspace和linspace函数类似，他创建的是<strong>等比数列</strong>。比如生成1~100的20个元素的等比数列。</li>
-</ul>
-</li>
-<li><h3 id="特殊的数组创建"><a href="#特殊的数组创建" class="headerlink" title="特殊的数组创建"></a>特殊的数组创建</h3><ul>
-<li>zeors创建值全部为0的数组。np.zeros((3,3))</li>
-<li>eye主对角线的元素全为1。np.eye(4)</li>
-<li>diag除对角线以外的其他元素都为0，对角线上的元素可以是0或者其他值。np.diag([1,2,3])</li>
-<li>ones创建全部为1的数组。np.ones((3,3))</li>
-</ul>
-</li>
-<li><h3 id="生成随机数"><a href="#生成随机数" class="headerlink" title="生成随机数"></a>生成随机数</h3><ul>
-<li>random函数是最常见的生成随机数的方法（np.random.random(100)）<strong>范围[0，1)</strong></li>
-<li>rand函数可以生成服从均匀分布的随机函数，（np.random.rand(10,5)）<strong>范围[0,1)</strong></li>
-<li>randn函数可以生成服从正太分布的随机数</li>
-<li>randint函数可以生成给定上下限范围的随机数（np.random.randiant(2,10,size = [2,5])）</li>
-</ul>
-</li>
-<li><h3 id="通过索引访问数组"><a href="#通过索引访问数组" class="headerlink" title="通过索引访问数组"></a>通过索引访问数组</h3><ul>
-<li><p>多维数组的索引</p>
-<ul>
-<li>多维数组的每一个维度都有一个索引，各个维度的索引之间用逗号隔开。例如，索引第二行和三行中的第3~5列的元素a[1:,2:]</li>
-<li>索引第二列的元素a[:,2]</li>
-</ul>
-</li>
-<li><p>一维数组的索引</p>
-<ul>
-<li>与python中的list的索引一致</li>
-<li>切片a[3:5]就是包括下标为3的，不包括下标为5的。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h3 id="变换数组的形态"><a href="#变换数组的形态" class="headerlink" title="变换数组的形态"></a>变换数组的形态</h3><ul>
-<li>reshape</li>
-<li>ravel函数完成数组的展平。</li>
-<li>flatten函数也可以展平，与ravel函数的区别在于flatten可以选择横向或者纵向展平。</li>
-<li>hstack函数实现数组的横向组合</li>
-<li>vstack函数实现数组的纵向组合</li>
-<li>concatenate函数可以实现数组的组合（axis = 1横向，axis = 0纵向）</li>
-<li>hsplit函数实现数组横向分割</li>
-<li>vsplit函数实现数组纵向分割</li>
-<li>split函数也可以分割数组（axis = 1横向，axis = 0纵向）</li>
-</ul>
-</li>
-</ul>
-<hr>
-<hr>
-<h2 id="掌握ufunc函数"><a href="#掌握ufunc函数" class="headerlink" title="掌握ufunc函数"></a>掌握ufunc函数</h2><p>ufunc函数全称是通用函数，是一种能够对数组中的所有元素进行操作的函数。ufunc函数是针对数组进行操作的，并且都已NumPy作为输出，因此不需要对数组的每一个元素都进行操作。</p>
-<ul>
-<li><h3 id="常用的ufunc函数运算"><a href="#常用的ufunc函数运算" class="headerlink" title="常用的ufunc函数运算"></a>常用的ufunc函数运算</h3><ul>
-<li>ufunc支持全部的四则运算</li>
-<li>ufunc也能进行比较，返回结果是布尔数组。</li>
-<li>np.all表示逻辑and，np.any表示逻辑or</li>
-</ul>
-</li>
-<li><p>ufunc函数的广播机制</p>
-<ul>
-<li>广播是指不同形状的数组之间执行算术运算的方式。当使用ufunc函数进行数组计算时，ufunc函数会对两个数组的对应元素计算。进行这种运算的前提是两个数组的shape一致。若两个数组的shape不一致是，则NumPy会实行广播机制。</li>
-<li>实行广播机制的4个原则：<ul>
-<li>让所有的输入数组向其中shape最长的数组看起，shape中不足的部分通过在前面加1补齐。</li>
-<li>输出数组的shape是输入数组的各个轴上的最大值。</li>
-<li>如果输入数组的某个轴和输出数组的对应轴的长度相同或者其长度为1，则这个数组能够用来计算，否则出错。</li>
-<li>当输入数组的某个长度为1时，沿着此轴运算时使用此轴上的第一组值。</li>
-<li><img src="D:%5C360MoveData%5CUsers%5C29620%5CDesktop%5Cmarkdown%5Ctupian%5CQQ%E6%88%AA%E5%9B%BE20190630203734.png" alt="一维数组的广播机制"></li>
-<li><img src="D:%5C360MoveData%5CUsers%5C29620%5CDesktop%5Cmarkdown%5Ctupian%5C2QQ%E6%88%AA%E5%9B%BE20190630203750.png" alt="二维数组的广播机制"></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="NumPy统计分析"><a href="#NumPy统计分析" class="headerlink" title="NumPy统计分析"></a>NumPy统计分析</h3><ul>
-<li><p>排序</p>
-<ul>
-<li>sort</li>
-<li>argsort排序，返回值是从新排序的值的下标</li>
-</ul>
-</li>
-<li><p>去重与重复数据</p>
-<ul>
-<li>unique</li>
-</ul>
-</li>
-<li><p>常用的统计函数</p>
-<ul>
-<li><p><strong>np.max()作用：找出最大值</strong></p>
-</li>
-<li><p><strong>np.min()作用：找出最小值</strong></p>
-</li>
-<li><p><strong>np.sum()作用：计算所有元素之和</strong></p>
-</li>
-<li><p><strong>np.prod()作用：计算数组中所有元素之积</strong></p>
-</li>
-<li><p><strong>np.std()作用：计算元素的标准差</strong></p>
-</li>
-<li><p><strong>np.var()作用：计算元素的方差</strong></p>
-</li>
-<li><p><strong>np.mean()作用：计算元素的平均值</strong></p>
-</li>
-<li><p><strong>np.median()作用：计算元素的中位数</strong></p>
-</li>
-</ul>
-</li>
-</ul>
 
     </article>
-    <!-- license  -->
-    
-        <div class="license-wrapper">
-            <p>原文作者：<a href="http://smile-yc.github.io">Diko</a>
-            <p>原文链接：<a href="http://smile-yc.github.io/2019/07/18/NumPy数值计算基础/">http://smile-yc.github.io/2019/07/18/NumPy数值计算基础/</a>
-            <p>发表日期：<a href="http://smile-yc.github.io/2019/07/18/NumPy数值计算基础/">July 18th 2019, 4:09:56 pm</a>
-            <p>更新日期：<a href="http://smile-yc.github.io/2019/07/18/NumPy数值计算基础/">July 18th 2019, 4:10:30 pm</a>
-            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
-        </div>
-    
-    <!-- paginator  -->
-    <ul class="post-paginator">
-        <li class="next">
-            
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/07/17/test-my-site/" title= "test_my_site">
-                    <div class="prevTitle">test_my_site</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
-    
-    
-    <!-- partial('_partial/comment/changyan') -->
-    <!--PC版-->
-
-
-    
-    
-
-    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -671,24 +442,6 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper" style=
-    
-
-
-
-
-
-
-
-top:50vh;
-
-    >
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#NumPy数值计算基础"><span class="toc-number">1.</span> <span class="toc-text">NumPy数值计算基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#NumPy简介"><span class="toc-number">1.1.</span> <span class="toc-text">NumPy简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#掌握NumPy数组对象adarray"><span class="toc-number">1.2.</span> <span class="toc-text">掌握NumPy数组对象adarray</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建数组对象"><span class="toc-number">1.2.1.</span> <span class="toc-text">创建数组对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Numpy提供了两种基本对象"><span class="toc-number">1.2.2.</span> <span class="toc-text">Numpy提供了两种基本对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组属性"><span class="toc-number">1.2.3.</span> <span class="toc-text">数组属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组创建"><span class="toc-number">1.2.4.</span> <span class="toc-text">数组创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊的数组创建"><span class="toc-number">1.2.5.</span> <span class="toc-text">特殊的数组创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成随机数"><span class="toc-number">1.2.6.</span> <span class="toc-text">生成随机数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过索引访问数组"><span class="toc-number">1.2.7.</span> <span class="toc-text">通过索引访问数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变换数组的形态"><span class="toc-number">1.2.8.</span> <span class="toc-text">变换数组的形态</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#掌握ufunc函数"><span class="toc-number">1.3.</span> <span class="toc-text">掌握ufunc函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的ufunc函数运算"><span class="toc-number">1.3.1.</span> <span class="toc-text">常用的ufunc函数运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NumPy统计分析"><span class="toc-number">1.3.2.</span> <span class="toc-text">NumPy统计分析</span></a></li></ol></li></ol></li></ol>
-    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -837,8 +590,6 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
-    
-        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
