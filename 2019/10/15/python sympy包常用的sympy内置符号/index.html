@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>About Diko-Y · Diko&#39;s Blog</title>
+    <title>python sympy包常用的sympy内置符号 · Diko&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,7 +203,7 @@
 </head>
 
     
-        <body class="about-body">
+        <body class="post-body">
     
     
 <header class="header">
@@ -211,6 +211,15 @@
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Diko&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">python sympy包常用的sympy内置符号</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Diko's Blog</a>
 </header>
@@ -229,23 +238,67 @@ height:50vh;
     <!-- 主页  -->
     
     
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/325504.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/1000273.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            About Diko-Y
+            python sympy包常用的sympy内置符号
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">168</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/15</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -346,18 +399,56 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <!-- 不可以删除，否则会调用post的layout  -->
-<main class="main about-page">
+            <main class="main post-page">
     <article class="article-entry">
-        <hr>
-<p>​                                 <strong>99年出生</strong></p>
-<p>​                                                                               <strong>博客名Diko-Y</strong></p>
-<p>​                                                               <strong>计算机在读学生</strong></p>
-<p>​                                                                               <strong>爱好：音乐-篮球</strong></p>
-<p>​                                                                                             <strong>人比较懒惰</strong>   </p>
-<hr>
+        <h1 id="python-sympy包常用的sympy内置符号"><a href="#python-sympy包常用的sympy内置符号" class="headerlink" title="python sympy包常用的sympy内置符号"></a>python sympy包常用的sympy内置符号</h1><ul>
+<li>sympy是一个Python的科学计算库，用一套强大的符号计算体系完成诸如多项式求值、求极限、解方程、求积分、微分方程、级数展开、矩阵运算等等计算问题。虽然Matlab的类似科学计算能力也很强大，但是Python以其语法简单、易上手、异常丰富的三方库生态，个人认为可以更优雅地解决日常遇到的各种计算问题。 </li>
+</ul>
+<h2 id="sympy求导函数diff"><a href="#sympy求导函数diff" class="headerlink" title="sympy求导函数diff"></a>sympy求导函数diff</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = Symbol(<span class="string">'x'</span>)</span><br><span class="line">y = Symbol(<span class="string">'y'</span>)</span><br><span class="line">z = x**<span class="number">2</span>+y**<span class="number">2</span></span><br><span class="line">print(z)</span><br><span class="line">f = sympy.diff(z,y)</span><br><span class="line">print(f)</span><br></pre></td></tr></table></figure>
 
+<p>结果如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x**<span class="number">2</span> + y**<span class="number">2</span></span><br><span class="line"><span class="number">2</span>*y</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他详情请点击"><a href="#其他详情请点击" class="headerlink" title="其他详情请点击"></a>其他详情请<a href="https://www.jianshu.com/p/339c91ae9f41" target="_blank" rel="noopener">点击</a></h2>
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://smile-yc.github.io">Diko</a>
+            <p>原文链接：<a href="http://smile-yc.github.io/2019/10/15/python sympy包常用的sympy内置符号/">http://smile-yc.github.io/2019/10/15/python sympy包常用的sympy内置符号/</a>
+            <p>发表日期：<a href="http://smile-yc.github.io/2019/10/15/python sympy包常用的sympy内置符号/">October 15th 2019, 4:20:42 pm</a>
+            <p>更新日期：<a href="http://smile-yc.github.io/2019/10/15/python sympy包常用的sympy内置符号/">October 15th 2019, 4:21:29 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/13/梯度下降/" title= "梯度下降">
+                    <div class="prevTitle">梯度下降</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -442,6 +533,24 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python-sympy包常用的sympy内置符号"><span class="toc-number">1.</span> <span class="toc-text">python sympy包常用的sympy内置符号</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sympy求导函数diff"><span class="toc-number">1.1.</span> <span class="toc-text">sympy求导函数diff</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他详情请点击"><span class="toc-number">1.2.</span> <span class="toc-text">其他详情请点击</span></a></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -694,6 +803,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
