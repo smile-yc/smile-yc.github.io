@@ -78,6 +78,8 @@
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -201,10 +203,8 @@
 </head>
 
     
-        <body class="home-body">
     
-    
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -220,34 +220,21 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/1000257.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Diko's Blog
-            <!-- 文章页  -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
-            
-            
-                life is beautiful.
-            
-            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -382,419 +369,10 @@ height:50vh;
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/11/06/简述KNN算法：K最近邻（KNN，k-NearestNeighbor）分类算法/" >
-            
-                <span>简述KNN算法：K最近邻（KNN，k-NearestNeighbor）分类算法</span>
-        </a>
-        <div class="abstract-content">
-            简述KNN算法：K最近邻（KNN，k-NearestNeighbor）分类算法前言：什么是KNN算法
-KNN 全称K-nearst neighbors，K近邻算法，是一种典型的监督学习算法。
-KNN算法既可以应用于分类应用中，也可以应用在回归应用中。
-KNN在做回归和分类的主要区别在于最后做预测的时候的决策方式不同。
-KNN在分类预测时，一般采用多数表决法；而在做回归预测时，一般采用平均值法。
-
-KNN算法概述　最简单最初级的分类器是将全部的训练数据所对应的类别都记录下来，当测试对象的属性和某个训练对象的属性完全匹配时，便可以对其进行分类。但是怎么可能所有测试对象都会找到与之完全匹配的训...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "data_science">data_science</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "machine_learning">machine_learning</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/17/决策树/" >
-            
-                <span>决策树</span>
-        </a>
-        <div class="abstract-content">
-            决策树 决策数(Decision Tree)在机器学习中也是比较常见的一种算法，属于监督学习中的一种。看字面意思应该也比较容易理解，相比其他算法比如支持向量机(SVM)或神经网络，似乎决策树感觉“亲切”许多。 
-
-优点：计算复杂度不高，输出结果易于理解，对中间值的缺失值不敏感，可以处理不相关特征数据。 
-
-缺点：可能会产生过度匹配的问题。 
-
-使用数据类型：数值型和标称型。 
-
-决策树学习通常包含三个步骤：
-
-特征选择
-决策树的生成
-决策树的修剪
-
-
-决策树创建分为两个阶段
-
-1.训练阶段
-从给定的训练数据集DB，构造出一颗决策树class = DecisionTree(DB)
-
-
-2....
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/17</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "data_science">data_science</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/15/python sympy包常用的sympy内置符号/" >
-            
-                <span>python sympy包常用的sympy内置符号</span>
-        </a>
-        <div class="abstract-content">
-            python sympy包常用的sympy内置符号
-sympy是一个Python的科学计算库，用一套强大的符号计算体系完成诸如多项式求值、求极限、解方程、求积分、微分方程、级数展开、矩阵运算等等计算问题。虽然Matlab的类似科学计算能力也很强大，但是Python以其语法简单、易上手、异常丰富的三方库生态，个人认为可以更优雅地解决日常遇到的各种计算问题。 
-
-sympy求导函数diff123456x = Symbol('x')y = Symbol('y')z = x**2+y**2print(z)f = sympy.diff(z,y)print(f)
-
-结果如下：
-12x**2 + y*...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/13/梯度下降/" >
-            
-                <span>梯度下降</span>
-        </a>
-        <div class="abstract-content">
-            梯度下降1. 什么是梯度
-在微积分里面，对多元函数的参数求∂偏导数，把求得的各个参数的偏导数以向量的形式写出来，就是梯度。比如函数f(x,y), 分别对x,y求偏导数，求得的梯度向量就是(∂f/∂x, ∂f/∂y)T,简称grad f(x,y)或者▽f(x,y)。对于在点(x0,y0)的具体梯度向量就是(∂f/∂x0, ∂f/∂y0)T.或者▽f(x0,y0)，如果是3个参数的向量梯度，就是(∂f/∂x, ∂f/∂y，∂f/∂z)T,以此类推。
-那么这个梯度向量求出来有什么意义呢？他的意义从几何意义上讲，就是函数变化增加最快的地方。具体来说，对于函数f(x,y),在点(x0,y0)，沿着...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "data_science">data_science</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/29/考研5500单词/" >
-            
-                <span>考研5500单词</span>
-        </a>
-        <div class="abstract-content">
-            1、abandon vt. 离弃，遗弃，抛弃；放弃。
-放纵，放弃a-否定（前缀） band-布带 on
-布带不在自己身上，放纵，放弃
-band n.条，带；乐队；波段；v.绑扎
-一群人绑在一起：乐队，一群
-bandage n绷带 v 用绷带扎缚
--age永恒的（后缀）
-band- ~ ban-（前缀）
-banner 横幅，旗帜（商店的旗帜）
-在小带子上写的字：slogan     s-加强语句
-在小带子上画的图：logo       photo
-将band ~ bound（元音降级变化）
-bound v/n.跳跃 a.被束缚的，一定的；边界
-abound 大量存在 
-（绑不住，就是太多了...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "考研英语">考研英语</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/29/you-get简单使用/" >
-            
-                <span>you-get简单使用</span>
-        </a>
-        <div class="abstract-content">
-            you-get简单使用you-get简介
-you-get是一个小型的命令行实用程序，用于从Web下载媒体内容（视频，音频，图像），以防没有其他方便的方法。
-
-you-get可以为您做什么：
-从流行的网站（如YouTube，优酷，Niconico等）下载视频/音频。（查看支持的网站的完整列表）
-在媒体播放器中串流播放线上影片。没有网络浏览器，没有更多的广告。
-通过抓取网页下载图像（感兴趣的）。
-下载任意非HTML内容，即二进制文件。
-
-安装
-通过pip安装官方发布的you-get是在PyPI上发布的，可以通过pip包管理器从PyPI镜像轻松安装。请注意，您必须使用Python 3版本pip...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/29/在校园CC客户端下VMware虚拟机连不上网的问题/" >
-            
-                <span>在校园CC客户端下VMware虚拟机连不上网的问题</span>
-        </a>
-        <div class="abstract-content">
-            在校园CC客户端下网络无法连接？&emsp;&emsp;安装虚拟机时发现安装到一半或者进入虚拟机后连不上网，在网上找了很多方法也解决不了，后来经过一项一项的排查发现是学校的CC客户端禁用了虚拟机的网口，导致后台的 VMware NAT service 进程自动终止。
-解决办法：Win+R 打开运行界面输入：
-1regedit
-
-进入注册表编辑器在计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services的VMware NAT Service中找到数值名称：DisplayName将图上的VMware NAT Service ——&gt;...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "VM虚拟机">VM虚拟机</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/29/NumPy数值计算基础/" >
-            
-                <span>NumPy数值计算基础</span>
-        </a>
-        <div class="abstract-content">
-            NumPy数值计算基础NumPy简介
-NumPy(Numerical Python) 是 Python 语言的一个扩展程序库，支持大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。NumPy 的前身 Numeric 最早是由 Jim Hugunin 与其它协作者共同开发，2005 年，Travis Oliphant 在 Numeric 中结合了另一个同性质的程序库 Numarray 的特色，并加入了其它扩展而开发了 NumPy。NumPy 为开放源代码并且由许多协作者共同维护开发。
-
-
-掌握NumPy数组对象adarray
-python提供了一个array模块。array...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/29</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/324256.jpg >
-    <div class="profile-name">Diko-Y</div>
-    
-    <div class="profile-signature">
-        Smile
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:yc_yc1240@163.com" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/smile-yc" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/mmqrcode1563419411816.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= //JohnLee99.github.io target="_black">JohnLee</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //zyink.top target="_black">四火</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //zhvy20.com target="_black">靓木</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //theshy.fun target="_black">雷</a>
-                    </span>
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">
